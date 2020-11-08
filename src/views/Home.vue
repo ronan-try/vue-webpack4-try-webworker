@@ -11,13 +11,7 @@ export default {
   name: 'Home',
     mounted () {
     const w = new Woker();
-    setInterval(()=>{
-      w.postMessage(10);
-      console.log('post');
-    }, 1000);
-    w.message = function ({data}) {
-      console.warn(data);
-    }
+    w.postMessage(10);
   }
 }
 </script>
